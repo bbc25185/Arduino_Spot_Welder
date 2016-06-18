@@ -5,7 +5,7 @@ const byte mosfetPin = 5;  //pin that controls the mosfet drivers
 const byte ledPin = 4;     //pin to control the status led
 const byte tasterPin = 2;  //pin to trigger a pulse with the foot switch
 const byte sensorPin = A7; //pin where the potentiometer value is read
-const byte DIVIDER 20.48   //Divider for the maximun pulse time
+#define DIVIDER 20.48   //Divider for the maximun pulse time
 
 int sensorValue = 0;  //initalize sensor value with zero
 int pulse_time;   //variable to store the pulse time
